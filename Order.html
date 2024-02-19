@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      background-image: url(food.JPEG);/* White background */
+    }
+    .navbar {
+      background-color: #ff0000; /* Red navbar */
+    }
+    .navbar-brand {
+      color: #ffffff !important; /* White text for navbar brand */
+    }
+    .menu-section {
+      padding: 50px 0;
+    }
+    .dish-card {
+      background-colo: #ffffff; /* White dish cards */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .dish-card:hover {
+      transform: translateY(-5px);
+    }
+    .dish-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .dish-title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .dish-price {
+      color: #ff0000; /* Red price text */
+      font-weight: bold;
+    }
+    .add-to-cart {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .quantity-input {
+      width: 50px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hungry Man Must Chop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="text-center my-5">Menu</h1>
+
+    <div class="row menu-section">
+      <div class="col-md-4">
+        <div class="dish-card">
+          <img src="fried.jpeg" alt="fried rice">
+          <div class="dish-details">
+            <h3 class="dish-title">Fried Rice</h3>
+            <p class="dish-price">$10.00</p>
+            <div class="add-to-cart">
+              <input type="number" class="quantity-input form-control" value="1">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="dish-card">
+          <img src="Jollof-Rice-With-Chicken.jpeg" alt="Jollof-Rice-With-Chicken" height="300">
+          <div class="dish-details">
+            <h3 class="dish-title">Jollof rice</h3>
+            <p class="dish-price">$12.00</p>
+            <div class="add-to-cart">
+              <input type="number" class="quantity-input form-control" value="1">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="dish-card">
+          <img src="yam-porridge.jpg" alt="yam-porridge>
+          <div class="dish-details">
+            <h3 class="dish-title">Yam-porridge</h3>
+            <p class="dish-price">$15.00</p>
+            <div class="add-to-cart">
+              <input type="number" class="quantity-input form-control" value="1">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+        <div class="dish-card">
+            <img src="beans.jpg" alt="beans">
+            <div class="dish-details">
+                <h3 class="dish-title">Beans and platain</h3>
+                <p class="dish-price">$5.00</p>
+                <div class="add-to-cart">
+                    <input type="number" class="quantity-input form-control" value="1">
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+        <div class="dish-card">
+            <img src="sop5.jpg" alt="okra soup">
+            <div class="dish-details">
+                <h3 class="dish-title">okra soup</h3>
+                <p class="dish-price">$5.00</p>
+                <div class="add-to-cart">
+                    <input type="number" class="quantity-input form-control" value="1">
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+        <div class="dish-card">
+            <img src="soup1.jpg" alt="egwusi soup">
+            <div class="dish-details">
+                <h3 class="dish-title">egwusi</h3>
+                <p class="dish-price">$5.00</p>
+                <div class="add-to-cart">
+                    <input type="number" class="quantity-input form-control" value="1">
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

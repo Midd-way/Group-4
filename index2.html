@@ -19,18 +19,23 @@
             background-color: #ff0000;
         }
         .footer {
-            position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-    background-color: #ff0000; 
-    color: #ffffff;
-    padding: 20px 0; 
-    text-align: center;
-}
+            background-color: #ff0000; 
+            color: #ffffff; 
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; 
+        }
         .full-width-img {
             width: 100%; 
             height: auto; 
         }
+        .container {
+      text-align: center; 
+    }
+    .centered-image {
+      display: inline-block;
+    }
+    
     </style>
 </head>
 <body>
@@ -48,13 +53,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="Order.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,17 +68,21 @@
 
     <!-- Page Content -->
     <div class="container mt-5">
-        <h1>Welcome to Hungry Man Must Chop</h1>
-        <p>We serve delicious food to satisfy your hunger!</p>
+        <h1 title="Welcome to Hungry Man Must Chop"><marquee>Welcome to Hungry Man Must Chop</marquee></h1>
+        <h3 class="text-right">We serve delicious food to satisfy your hunger!</h3>
+       <h3 class="text-center" style="color: #ff0000;" title="We serve the best, Give you the best, Are the best"><marquee>We serve the best, Give you the best, Are the best</marquee></h3>
     </div>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" style="margin-top: -200px;">
         <div class="row">
             <div class="col">
-                <img src="black-removebg-preview.png" alt="HUNGRY MAN" class="img-fluid" height="280" width="280">
+                <img src="black-removebg-preview.png" alt="HUNGRY MAN" class="img-fluid" >
+
             </div>
         </div>
     </div>
 
+   
+   
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
